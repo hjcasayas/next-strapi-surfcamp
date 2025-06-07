@@ -31,5 +31,5 @@
       ]
     }
   },
-  "postCreateCommand": "sudo chown node node_modules && npm install"
+  "postCreateCommand": "sudo chown node node_modules && sudo npm install"
 }
