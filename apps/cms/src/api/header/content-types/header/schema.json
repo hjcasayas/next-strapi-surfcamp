@@ -38,6 +38,12 @@
       "component": "header.cta-button",
       "repeatable": false,
       "required": true
+    },
+    "hero": {
+      "type": "component",
+      "component": "header.hero",
+      "repeatable": false,
+      "required": true
     }
   }
 }
