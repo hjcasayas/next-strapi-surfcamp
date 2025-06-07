@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_header_heroes",
+  "info": {
+    "displayName": "Hero"
+  },
+  "options": {},
+  "attributes": {
+    "headings": {
+      "type": "component",
+      "component": "header.heading",
+      "repeatable": true,
+      "required": true
+    },
+    "cover": {
+      "type": "component",
+      "component": "header.cover",
+      "repeatable": false,
+      "required": true
+    },
+    "ctaButton": {
+      "type": "component",
+      "component": "header.cta-button",
+      "repeatable": false,
+      "required": true
+    },
+    "logo": {
+      "type": "component",
+      "component": "header.logo",
+      "repeatable": false,
+      "required": true
+    },
+    "logoColor": {
+      "type": "enumeration",
+      "required": true,
+      "default": "black",
+      "enum": ["black", "orange"]
+    }
+  },
+  "config": {}
+}
