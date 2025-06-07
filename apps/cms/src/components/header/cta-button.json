@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_header_cta_buttons",
+  "info": {
+    "displayName": "CTA Button"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "text",
+      "required": true
+    },
+    "bgColor": {
+      "type": "enumeration",
+      "required": true,
+      "default": "turquoise",
+      "enum": ["turquoise", "black", "orange"]
+    }
+  },
+  "config": {}
+}
