@@ -16,6 +16,12 @@
       "component": "header.logo",
       "repeatable": false,
       "required": true
+    },
+    "menu": {
+      "type": "component",
+      "component": "header.menu-item",
+      "repeatable": true,
+      "required": true
     }
   }
 }
