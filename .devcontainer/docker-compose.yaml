@@ -1,0 +1,8 @@
+services:
+  dev-container:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    volumes:
+      - ../:/workspaces/learn-sams-surfcamp:cached
+    command: sleep infinity
