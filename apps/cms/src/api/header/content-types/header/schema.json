@@ -11,6 +11,16 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
     "logo": {
       "type": "component",
       "component": "header.logo",
@@ -21,6 +31,12 @@
       "type": "component",
       "component": "header.menu-item",
       "repeatable": true,
+      "required": true
+    },
+    "ctaButton": {
+      "type": "component",
+      "component": "header.cta-button",
+      "repeatable": false,
       "required": true
     }
   }
