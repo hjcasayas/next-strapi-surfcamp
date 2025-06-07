@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "dev:frontend": "npm run dev --workspace=apps/frontend",
+    "dev:cms": "npm run dev --workspace=apps/cms",
     "git:commit": "cz",
     "lint-staged": "lint-staged",
     "prepare": "husky"
