@@ -21,6 +21,9 @@ services:
       - frontend-node_modules:/app/node_modules
     ports:
       - '3030:3000'
+    env_file:
+      - path: ./.frontend.env
+        required: true
   cms:
     build:
       context: ../
