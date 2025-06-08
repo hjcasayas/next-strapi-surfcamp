@@ -5,6 +5,7 @@
   "scripts": {
     "dev:frontend": "npm run dev --workspace=apps/frontend",
     "dev:cms": "npm run dev --workspace=apps/cms",
+    "prettier-watch": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}",
     "git:commit": "cz",
     "lint-staged": "lint-staged",
     "prepare": "husky"
@@ -21,7 +22,9 @@
     "eslint": "^9.28.0",
     "eslint-plugin-react": "^7.37.5",
     "globals": "^16.2.0",
+    "onchange": "^7.1.0",
     "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.12",
     "typescript-eslint": "^8.33.1"
   },
   "config": {
