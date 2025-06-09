@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_header_cta_buttons",
+  "collectionName": "components_common_cta_buttons",
   "info": {
     "displayName": "CTA Button"
   },
@@ -10,7 +10,7 @@
       "required": true
     },
     "url": {
-      "type": "text",
+      "type": "string",
       "required": true
     },
     "bgColor": {

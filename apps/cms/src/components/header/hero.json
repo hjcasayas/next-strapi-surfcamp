@@ -17,15 +17,9 @@
       "repeatable": false,
       "required": true
     },
-    "ctaButton": {
-      "type": "component",
-      "component": "header.cta-button",
-      "repeatable": false,
-      "required": true
-    },
     "logo": {
       "type": "component",
-      "component": "header.logo",
+      "component": "common.logo",
       "repeatable": false,
       "required": true
     },
@@ -34,6 +28,12 @@
       "required": true,
       "default": "black",
       "enum": ["black", "orange"]
+    },
+    "ctaButton": {
+      "type": "component",
+      "component": "common.cta-button",
+      "repeatable": false,
+      "required": true
     }
   },
   "config": {}

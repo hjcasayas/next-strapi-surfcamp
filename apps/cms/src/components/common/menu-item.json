@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_header_menu_items",
+  "collectionName": "components_common_menu_items",
   "info": {
     "displayName": "Menu Item"
   },
@@ -7,11 +7,13 @@
   "attributes": {
     "label": {
       "type": "string",
-      "required": true
+      "required": true,
+      "unique": true
     },
     "url": {
-      "type": "text",
-      "required": true
+      "type": "string",
+      "required": true,
+      "unique": true
     }
   },
   "config": {}

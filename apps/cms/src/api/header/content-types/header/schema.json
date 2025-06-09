@@ -23,19 +23,18 @@
     },
     "logo": {
       "type": "component",
-      "component": "header.logo",
-      "repeatable": false,
-      "required": true
+      "component": "common.logo",
+      "repeatable": false
     },
     "menu": {
       "type": "component",
-      "component": "header.menu-item",
+      "component": "common.menu-item",
       "repeatable": true,
       "required": true
     },
     "ctaButton": {
       "type": "component",
-      "component": "header.cta-button",
+      "component": "common.cta-button",
       "repeatable": false,
       "required": true
     },
