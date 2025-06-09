@@ -27,10 +27,9 @@
       "repeatable": false
     },
     "menu": {
-      "type": "component",
-      "component": "common.menu-item",
-      "repeatable": true,
-      "required": true
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::navigation.navigation"
     },
     "ctaButton": {
       "type": "component",

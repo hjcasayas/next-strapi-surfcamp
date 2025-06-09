@@ -27,21 +27,19 @@
       "repeatable": false,
       "required": true
     },
-    "menu": {
-      "type": "component",
-      "component": "common.menu-item",
-      "repeatable": true,
-      "required": true
-    },
-    "policies": {
-      "type": "component",
-      "component": "common.menu-item",
-      "repeatable": true,
-      "required": true
-    },
     "copyright": {
       "type": "text",
       "required": true
+    },
+    "menu": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::navigation.navigation"
+    },
+    "policies": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::navigation.navigation"
     }
   }
 }
