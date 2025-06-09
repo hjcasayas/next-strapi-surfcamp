@@ -23,12 +23,6 @@
       "repeatable": false,
       "required": true
     },
-    "logoColor": {
-      "type": "enumeration",
-      "required": true,
-      "default": "black",
-      "enum": ["black", "orange"]
-    },
     "ctaButton": {
       "type": "component",
       "component": "common.cta-button",
