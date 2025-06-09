@@ -6,6 +6,7 @@ export interface Logo {
 }
 
 export interface MenuItem {
+  id: string;
   label: string;
   url: string;
 }
@@ -17,6 +18,7 @@ export interface Hero {
 }
 
 export interface Heading {
+  id: string;
   text: string;
 }
 
@@ -40,8 +42,16 @@ export interface Header {
   hero: Hero;
 }
 
+export interface Footer {
+  logo: Logo;
+  menu: MenuItem[];
+  policies: MenuItem[];
+  copyright: string;
+}
+
 export interface LandingPageData {
   landingPage: {
     header: Header;
+    footer: Footer;
   };
 }
