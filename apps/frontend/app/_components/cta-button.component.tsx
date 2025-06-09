@@ -21,7 +21,7 @@ export const CtaButtonComponent = ({
   }
 
   return (
-    <Link href={url} className={cn(backgroundColor, 'text-white', className)}>
+    <Link href={url} className={cn('text-white', backgroundColor, className)}>
       {label}
     </Link>
   );
