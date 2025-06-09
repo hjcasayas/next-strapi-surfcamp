@@ -17,6 +17,7 @@ export interface Hero {
   headings: Heading[];
   cover: Cover;
   ctaButton: CtaButton;
+  logo: Logo;
 }
 
 export interface Heading {
