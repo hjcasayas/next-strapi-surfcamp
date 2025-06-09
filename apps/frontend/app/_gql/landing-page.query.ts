@@ -7,13 +7,17 @@ export const landingPageQuery = gql`
         logo {
           image {
             url
+            width
+            height
           }
           altText
         }
         menu {
-          label
-          url
-          label
+          links {
+            slug
+            url
+            label
+          }
         }
         ctaButton {
           label
@@ -36,6 +40,14 @@ export const landingPageQuery = gql`
             url
             bgColor
           }
+          logo {
+            image {
+              url
+              width
+              height
+            }
+            altText
+          }
         }
       }
       footer {
@@ -43,17 +55,23 @@ export const landingPageQuery = gql`
           altText
           image {
             url
+            width
+            height
           }
         }
         menu {
-          id
-          label
-          url
+          links {
+            slug
+            label
+            url
+          }
         }
         policies {
-          id
-          label
-          url
+          links {
+            slug
+            label
+            url
+          }
         }
         copyright
       }

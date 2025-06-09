@@ -1,12 +1,14 @@
 export interface Logo {
   image: {
     url: string;
+    width: number;
+    height: number;
   };
   altText: string;
 }
 
-export interface MenuItem {
-  id: string;
+export interface Link {
+  slug: string;
   label: string;
   url: string;
 }
@@ -37,15 +39,21 @@ export interface CtaButton {
 
 export interface Header {
   logo: Logo;
-  menu: MenuItem[];
+  menu: {
+    links: Link[];
+  };
   ctaButton: CtaButton;
   hero: Hero;
 }
 
 export interface Footer {
   logo: Logo;
-  menu: MenuItem[];
-  policies: MenuItem[];
+  menu: {
+    links: Link[];
+  };
+  policies: {
+    links: Link[];
+  };
   copyright: string;
 }
 
