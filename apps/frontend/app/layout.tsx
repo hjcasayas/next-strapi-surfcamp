@@ -3,8 +3,8 @@ import './globals.css';
 import { Providers } from './_providers';
 
 export const metadata: Metadata = {
-  title: "Sam's Surfcamp",
-  description: "Learn surfing with expert instructors at Sam's Surfcamp.",
+  title: 'Surfcamp',
+  description: 'Learn surfing with expert instructors at Surfcamp.',
 };
 
 export default function RootLayout({
