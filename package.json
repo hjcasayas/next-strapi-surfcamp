@@ -5,7 +5,7 @@
   "scripts": {
     "dev:frontend": "npm run dev --workspace=apps/frontend",
     "dev:cms": "npm run dev --workspace=apps/cms",
-    "prettier-watch": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}",
+    "prettier-watch": "onchange \"**/*.tsx\" \"**/*.ts\" -- prettier --write --ignore-unknown {{changed}}",
     "git:commit": "cz",
     "lint-staged": "lint-staged",
     "prepare": "husky"
