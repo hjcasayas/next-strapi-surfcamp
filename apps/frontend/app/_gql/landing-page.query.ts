@@ -8,7 +8,7 @@ export const landingPageQuery = gql`
           image {
             url
           }
-          alt
+          altText
         }
         menu {
           label
@@ -27,7 +27,7 @@ export const landingPageQuery = gql`
             image {
               url
             }
-            alt
+            altText
           }
           ctaButton {
             label

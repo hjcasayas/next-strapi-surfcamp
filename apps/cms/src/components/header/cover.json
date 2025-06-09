@@ -11,7 +11,7 @@
       "required": true,
       "allowedTypes": ["images"]
     },
-    "alt": {
+    "altText": {
       "type": "string",
       "required": true
     }

@@ -10,7 +10,7 @@ export const LogoComponent = ({ logo }: LogoComponentProps) => {
     <div className="relative block h-[calc-size(auto,76px)] w-[50px]">
       <Image
         src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${logo.image.url}`}
-        alt={logo.alt}
+        alt={logo.altText}
         style={{ objectFit: 'cover' }}
         priority
         fill

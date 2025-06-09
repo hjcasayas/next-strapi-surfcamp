@@ -2,7 +2,7 @@ export interface Logo {
   image: {
     url: string;
   };
-  alt: string;
+  altText: string;
 }
 
 export interface MenuItem {
@@ -24,7 +24,7 @@ export interface Cover {
   image: {
     url: string;
   };
-  alt: string;
+  altText: string;
 }
 
 export interface CtaButton {
