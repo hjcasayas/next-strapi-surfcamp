@@ -136,3 +136,6 @@ dist
 .pnp.*
 
 *.env
+
+# Mac system files
+.DS_Store
