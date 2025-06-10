@@ -11,6 +11,7 @@ import { HeroComponent } from '../../hero.component';
 import { LogoComponent } from '../../logo.component';
 
 import { useLandingPageQuery } from '../../../_hooks/use-landing-page-query.hook';
+import { InfoBlocksComponent } from '../../info-blocks.component';
 
 export const LandingPageComponent = () => {
   const { data, isLoading, isError } = useLandingPageQuery();
@@ -27,7 +28,7 @@ export const LandingPageComponent = () => {
   }
 
   const { landingPage } = data;
-  const { header, footer } = landingPage;
+  const { header, footer, infoBlocks } = landingPage;
 
   const { logo, ctaButton, menu, hero } = header;
 
@@ -41,7 +42,7 @@ export const LandingPageComponent = () => {
           <HeaderNav links={menu.links} />
           <CtaButtonComponent
             {...ctaButton}
-            className="rounded-full px-5 py-3 font-bold"
+            className="rounded-full px-5 py-3 text-2xl"
           />
         </NavigationComponent>
         <HeroComponent>
@@ -49,13 +50,16 @@ export const LandingPageComponent = () => {
           <HeadlineComponent headlines={hero.headings} />
           <CtaButtonComponent
             {...hero.ctaButton}
-            className="rounded-full px-8 py-4 font-bold"
+            className="rounded-full px-8 py-4 text-3xl"
           />
           <div className="absolute bottom-0 left-1/2 h-[185px] w-[120px] -translate-x-1/2 translate-y-1/2">
-            <LogoComponent {...logo} className="logo-black" />
+            <LogoComponent {...logo} />
           </div>
         </HeroComponent>
       </HeaderComponent>
+      <main>
+        <InfoBlocksComponent infoBlocks={infoBlocks} />
+      </main>
       <FooterComponent {...footer} />
     </>
   );
