@@ -75,10 +75,10 @@ export const landingPageQuery = gql`
         }
         copyright
       }
-      info_blocks {
+      infoBlocks {
         slug
-        title
-        description
+        headline
+        content
         image {
           url
           alternativeText
@@ -90,6 +90,7 @@ export const landingPageQuery = gql`
           bgColor
         }
         direction
+        imageClipDirection
       }
     }
   }

@@ -1,10 +1,5 @@
 export interface Logo {
-  image: {
-    url: string;
-    width: number;
-    height: number;
-    alternativeText: string;
-  };
+  image: Image;
 }
 
 export interface Link {
@@ -26,11 +21,7 @@ export interface Heading {
 }
 
 export interface Cover {
-  image: {
-    url: string;
-    alternativeText: string;
-  };
-  altText: string;
+  image: Image;
 }
 
 export interface CtaButton {
@@ -59,9 +50,24 @@ export interface Footer {
   copyright: string;
 }
 
+export interface Image {
+  url: string;
+  alternativeText: string;
+}
+
+export interface InfoBlock {
+  slug: string;
+  headline: string;
+  content: string;
+  image: Image;
+  ctaButton: CtaButton;
+  direction: 'flex_row' | 'flex_row_reverse';
+  imageClipDirection: 'info_block_image_clip' | 'info_block_image_clip_reverse';
+}
 export interface LandingPageData {
   landingPage: {
     header: Header;
     footer: Footer;
+    infoBlocks: InfoBlock[];
   };
 }
