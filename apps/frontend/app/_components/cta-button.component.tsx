@@ -8,20 +8,16 @@ export interface CallToActionComponentProps extends CtaButton {
 
 export const CtaButtonComponent = ({
   label,
-  bgColor,
   url,
   className,
+  bgColor,
 }: CallToActionComponentProps) => {
-  let backgroundColor = 'bg-turquoise';
-  if (bgColor === 'black') {
-    backgroundColor = 'bg-black';
-  }
-  if (bgColor === 'orange') {
-    backgroundColor = 'bg-orange';
-  }
-
+  console.log({ bgColor });
   return (
-    <Link href={url} className={cn('text-white', backgroundColor, className)}>
+    <Link
+      href={url}
+      className={cn('text-white', bgColor.replaceAll('_', '-'), className)}
+    >
       {label}
     </Link>
   );
