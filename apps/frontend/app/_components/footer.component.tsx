@@ -15,10 +15,7 @@ export const FooterComponent = ({
     <footer className="flex flex-col space-y-8 bg-black px-11 pt-20 pb-11 text-white">
       <div className="flex items-center justify-between">
         <div className="relative h-32 w-20">
-          <LogoComponent
-            {...logo}
-            className="brightness-[104%] contrast-[101%] hue-rotate-[270deg] invert-100 saturate-0 sepia-[32%]"
-          />
+          <LogoComponent {...logo} className="logo-white" />
         </div>
         <FooterNav links={menu.links} />
       </div>

@@ -29,4 +29,12 @@
   .clip-hero-image {
     clip-path: xywh(0 0px 100% 100% round 0 0 15% 15%);
   }
+
+  .logo-black {
+    @apply brightness-[100%] contrast-[101%] hue-rotate-[227deg] invert-0 saturate-[6%] sepia-0;
+  }
+
+  .logo-white {
+    @apply brightness-[104%] contrast-[101%] hue-rotate-[270deg] invert-100 saturate-0 sepia-[32%];
+  }
 }

@@ -36,10 +36,7 @@ export const LandingPageComponent = () => {
       <HeaderComponent>
         <NavigationComponent>
           <div className="relative h-20 w-12">
-            <LogoComponent
-              {...logo}
-              className="brightness-[100%] contrast-[101%] hue-rotate-[227deg] invert-0 saturate-[6%] sepia-0"
-            />
+            <LogoComponent {...logo} className="logo-black" />
           </div>
           <HeaderNav links={menu.links} />
           <CtaButtonComponent
@@ -55,10 +52,7 @@ export const LandingPageComponent = () => {
             className="rounded-full px-8 py-4 font-bold"
           />
           <div className="absolute bottom-0 left-1/2 h-[185px] w-[120px] -translate-x-1/2 translate-y-1/2">
-            <LogoComponent
-              {...logo}
-              className="brightness-[100%] contrast-[101%] hue-rotate-[227deg] invert-0 saturate-[6%] sepia-0"
-            />
+            <LogoComponent {...logo} className="logo-black" />
           </div>
         </HeroComponent>
       </HeaderComponent>
