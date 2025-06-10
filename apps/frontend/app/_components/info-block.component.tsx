@@ -27,7 +27,7 @@ export const InfoBlockComponent = ({
           alt={image.alternativeText}
           className={cn(
             'object-cover object-center',
-            reversed ? 'info-block-image-clip-reverse' : 'info-block-image-clip'
+            reversed ? 'rounded-l-full' : 'rounded-r-full'
           )}
           sizes="100%"
           loader={imageLoaderProp}

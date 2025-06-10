@@ -11,7 +11,7 @@ export const CoverComponent = ({
 }: CoverComponentProps) => {
   return (
     <Image
-      className="clip-hero-image top-0 right-0 left-0 z-0 object-cover object-center"
+      className="top-0 right-0 left-0 z-0 rounded-b-[15%] object-cover object-center"
       src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${url}`}
       loader={imageLoaderProp}
       alt={alternativeText}
