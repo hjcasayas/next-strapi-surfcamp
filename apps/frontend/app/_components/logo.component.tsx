@@ -7,8 +7,7 @@ export interface LogoComponentProps extends Logo {
 
 export const LogoComponent = (props: LogoComponentProps) => {
   const {
-    image: { url },
-    altText,
+    image: { url, alternativeText },
     className = '',
   } = props;
 
@@ -16,7 +15,7 @@ export const LogoComponent = (props: LogoComponentProps) => {
     <Image
       className={className}
       src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${url}`}
-      alt={altText}
+      alt={alternativeText}
       unoptimized
       fill
       priority

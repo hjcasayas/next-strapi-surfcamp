@@ -7,14 +7,13 @@ import { imageLoaderProp } from '@/app/_utils/image-loader-prop.util';
 type CoverComponentProps = Cover;
 
 export const CoverComponent = ({
-  image: { url },
-  altText,
+  image: { url, alternativeText },
 }: CoverComponentProps) => {
   return (
     <Image
       className="clip-hero-image top-0 right-0 left-0 -z-10 object-cover object-center"
       src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${url}`}
-      alt={altText}
+      alt={alternativeText}
       fill
       loader={imageLoaderProp}
     />

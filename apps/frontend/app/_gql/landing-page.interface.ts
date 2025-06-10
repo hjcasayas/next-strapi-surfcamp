@@ -3,8 +3,8 @@ export interface Logo {
     url: string;
     width: number;
     height: number;
+    alternativeText: string;
   };
-  altText: string;
 }
 
 export interface Link {
@@ -28,6 +28,7 @@ export interface Heading {
 export interface Cover {
   image: {
     url: string;
+    alternativeText: string;
   };
   altText: string;
 }

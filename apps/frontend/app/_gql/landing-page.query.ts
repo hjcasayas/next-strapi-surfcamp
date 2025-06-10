@@ -9,8 +9,8 @@ export const landingPageQuery = gql`
             url
             width
             height
+            alternativeText
           }
-          altText
         }
         menu {
           links {
@@ -32,8 +32,8 @@ export const landingPageQuery = gql`
           cover {
             image {
               url
+              alternativeText
             }
-            altText
           }
           ctaButton {
             label
@@ -45,18 +45,18 @@ export const landingPageQuery = gql`
               url
               width
               height
+              alternativeText
             }
-            altText
           }
         }
       }
       footer {
         logo {
-          altText
           image {
             url
             width
             height
+            alternativeText
           }
         }
         menu {
@@ -74,6 +74,22 @@ export const landingPageQuery = gql`
           }
         }
         copyright
+      }
+      info_blocks {
+        slug
+        title
+        description
+        image {
+          url
+          alternativeText
+        }
+        ctaButton {
+          id
+          label
+          url
+          bgColor
+        }
+        direction
       }
     }
   }
