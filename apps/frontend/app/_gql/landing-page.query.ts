@@ -7,10 +7,9 @@ export const landingPageQuery = gql`
         logo {
           image {
             url
-            width
-            height
             alternativeText
           }
+          colorClassName
         }
         menu {
           links {
@@ -54,10 +53,9 @@ export const landingPageQuery = gql`
         logo {
           image {
             url
-            width
-            height
             alternativeText
           }
+          colorClassName
         }
         menu {
           links {

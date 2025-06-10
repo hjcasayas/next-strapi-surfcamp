@@ -1,5 +1,6 @@
 export interface Logo {
   image: Image;
+  colorClassName: 'logo_white' | 'logo_black' | 'logo_orange';
 }
 
 export interface Link {

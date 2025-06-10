@@ -2,19 +2,26 @@ import Image from 'next/image';
 import { Logo } from '../_gql/landing-page.interface';
 import { cn } from '../_utils/cn.util';
 
-export interface LogoComponentProps extends Logo {
-  className?: string;
-}
-
-export const LogoComponent = (props: LogoComponentProps) => {
+export const LogoComponent = (props: Logo) => {
   const {
     image: { url, alternativeText },
-    className = '',
+    colorClassName = 'logo_black',
   } = props;
+
+  console.log({ props });
+
+  const colorClassNameMap: Record<string, string> = {
+    logo_black: 'logo-black',
+    logo_white: 'logo-white',
+    logo_orange: 'logo-orange',
+  };
 
   return (
     <Image
-      className={cn('object-contain object-center', className)}
+      className={cn(
+        'object-contain object-center',
+        colorClassNameMap[colorClassName]
+      )}
       src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${url}`}
       alt={alternativeText}
       unoptimized

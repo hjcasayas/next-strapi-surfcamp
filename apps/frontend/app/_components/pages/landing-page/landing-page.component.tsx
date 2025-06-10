@@ -37,7 +37,7 @@ export const LandingPageComponent = () => {
       <HeaderComponent>
         <NavigationComponent>
           <div className="relative h-20 w-12">
-            <LogoComponent {...logo} className="logo-black" />
+            <LogoComponent {...logo} />
           </div>
           <HeaderNav links={menu.links} />
           <CtaButtonComponent
