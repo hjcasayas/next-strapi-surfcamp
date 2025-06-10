@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_header_headlines",
+  "info": {
+    "displayName": "Headline"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "colorClassName": {
+      "type": "enumeration",
+      "required": true,
+      "default": "text-black",
+      "enum": ["text-white", "text-black"]
+    }
+  },
+  "config": {}
+}

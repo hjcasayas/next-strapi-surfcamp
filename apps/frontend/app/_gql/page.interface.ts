@@ -10,15 +10,16 @@ export interface Link {
 }
 
 export interface Hero {
-  headings: Heading[];
+  headlines: Headline[];
   cover: Cover;
   ctaButton: CtaButton;
   logo: Logo;
 }
 
-export interface Heading {
+export interface Headline {
   id: string;
   text: string;
+  colorClassName: 'text_white' | 'text_black';
 }
 
 export interface Cover {

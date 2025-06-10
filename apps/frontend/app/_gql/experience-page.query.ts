@@ -25,7 +25,8 @@ export const experiencePageQuery = gql`
           bgColor
         }
         hero {
-          headings {
+          headlines {
+            colorClassName
             text
             id
           }
@@ -84,7 +85,6 @@ export const experiencePageQuery = gql`
           alternativeText
         }
         ctaButton {
-          id
           label
           url
           bgColor

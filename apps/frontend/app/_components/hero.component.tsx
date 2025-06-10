@@ -1,6 +1,6 @@
 import { Hero } from '../_gql/page.interface';
 import { CoverComponent } from './cover.component';
-import { HeadlineComponent } from './headline.component';
+import { HeadlinesComponent } from './headlines.component';
 import { CtaButtonComponent } from './cta-button.component';
 import { LogoComponent } from './logo.component';
 
@@ -8,12 +8,12 @@ export const HeroComponent = ({
   cover,
   ctaButton,
   logo,
-  ...headings
+  ...headlines
 }: Hero) => {
   return (
     <div className="relative flex h-full flex-1 flex-col items-start justify-center px-12 pt-56 pb-32">
       <CoverComponent {...cover} />
-      <HeadlineComponent {...headings} />
+      <HeadlinesComponent {...headlines} />
       <CtaButtonComponent
         {...ctaButton}
         className="z-10 rounded-full px-8 py-4 text-3xl"

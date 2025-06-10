@@ -25,7 +25,8 @@ export const landingPageQuery = gql`
           bgColor
         }
         hero {
-          headings {
+          headlines {
+            colorClassName
             text
             id
           }

@@ -5,12 +5,6 @@
   },
   "options": {},
   "attributes": {
-    "headings": {
-      "type": "component",
-      "component": "header.heading",
-      "repeatable": true,
-      "required": true
-    },
     "cover": {
       "type": "component",
       "component": "header.cover",
@@ -27,6 +21,12 @@
       "type": "component",
       "component": "common.cta-button",
       "repeatable": false,
+      "required": true
+    },
+    "headlines": {
+      "type": "component",
+      "component": "header.headline",
+      "repeatable": true,
       "required": true
     }
   },
