@@ -4,7 +4,7 @@ import Markdown from 'react-markdown';
 
 import { imageLoaderProp } from '../_utils/image-loader-prop.util';
 import { CtaButtonComponent } from './cta-button.component';
-import { InfoBlock } from '../_gql/landing-page.interface';
+import { InfoBlock } from '../_gql/page.interface';
 import { cn } from '../_utils/cn.util';
 
 export const InfoBlockComponent = ({

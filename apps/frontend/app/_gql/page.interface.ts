@@ -64,10 +64,8 @@ export interface InfoBlock {
   ctaButton: CtaButton;
   reversed: boolean;
 }
-export interface LandingPageData {
-  landingPage: {
-    header: Header;
-    footer: Footer;
-    infoBlocks: InfoBlock[];
-  };
+export interface Page {
+  header: Header;
+  footer: Footer;
+  infoBlocks: InfoBlock[];
 }

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { CtaButton } from '../_gql/landing-page.interface';
+import { CtaButton } from '../_gql/page.interface';
 import { cn } from '../_utils/cn.util';
 
 export interface CallToActionComponentProps extends CtaButton {

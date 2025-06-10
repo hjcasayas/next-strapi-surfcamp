@@ -1,4 +1,4 @@
-import { Footer } from '@/app/_gql/landing-page.interface';
+import { Footer } from '@/app/_gql/page.interface';
 import { LogoComponent } from './logo.component';
 import { FooterNav } from './footer-nav.component';
 import { PolicyNav } from './policy-nav';

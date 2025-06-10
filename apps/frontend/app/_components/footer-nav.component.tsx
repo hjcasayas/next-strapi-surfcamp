@@ -1,5 +1,5 @@
 import NextLink from 'next/link';
-import { Link } from '../_gql/landing-page.interface';
+import { Link } from '../_gql/page.interface';
 
 export const FooterNav = ({ links }: { links: Link[] }) => {
   return (

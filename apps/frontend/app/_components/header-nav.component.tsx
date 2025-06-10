@@ -1,8 +1,12 @@
 import NextLink from 'next/link';
 
-import { Link } from '@/app/_gql/landing-page.interface';
+import { Link } from '@/app/_gql/page.interface';
 
-export const HeaderNav = ({ links }: { links: Link[] }) => {
+interface HeaderNavProps {
+  links: Link[];
+}
+
+export const HeaderNav = ({ links }: HeaderNavProps) => {
   return (
     <ul className="flex items-center space-x-12">
       {links.map((link) => (
