@@ -31,23 +31,22 @@ export interface CtaButton {
   bgColor: 'bg_turquoise' | 'bg_black' | 'bg_orange';
 }
 
+export interface Navigation {
+  colorClassName: 'text_white' | 'text_black';
+  links: Link[];
+}
+
 export interface Header {
   logo: Logo;
-  menu: {
-    links: Link[];
-  };
+  menu: Navigation;
   ctaButton: CtaButton;
   hero: Hero;
 }
 
 export interface Footer {
   logo: Logo;
-  menu: {
-    links: Link[];
-  };
-  policies: {
-    links: Link[];
-  };
+  menu: Navigation;
+  policies: Navigation;
   copyright: string;
 }
 

@@ -1,14 +1,17 @@
 import NextLink from 'next/link';
 
-import { Link } from '@/app/_gql/page.interface';
+import { Navigation } from '@/app/_gql/page.interface';
+import { colorClassNameMap } from '../_utils/nav-color-class-name-map.util';
+import { cn } from '../_utils/cn.util';
 
-interface HeaderNavProps {
-  links: Link[];
-}
-
-export const HeaderNav = ({ links }: HeaderNavProps) => {
+export const HeaderNav = ({ links, colorClassName }: Navigation) => {
   return (
-    <ul className="flex items-center space-x-12">
+    <ul
+      className={cn(
+        'flex items-center space-x-12',
+        colorClassNameMap[colorClassName]
+      )}
+    >
       {links.map((link) => (
         <NextLink
           key={link.slug}

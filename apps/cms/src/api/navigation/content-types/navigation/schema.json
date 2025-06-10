@@ -25,6 +25,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::link.link"
+    },
+    "colorClassName": {
+      "type": "enumeration",
+      "required": true,
+      "default": "text-black",
+      "enum": ["text-white", "text-black"]
     }
   }
 }

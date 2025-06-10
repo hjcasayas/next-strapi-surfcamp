@@ -17,6 +17,7 @@ export const landingPageQuery = gql`
             url
             label
           }
+          colorClassName
         }
         ctaButton {
           label
@@ -42,10 +43,9 @@ export const landingPageQuery = gql`
           logo {
             image {
               url
-              width
-              height
               alternativeText
             }
+            colorClassName
           }
         }
       }
@@ -63,6 +63,7 @@ export const landingPageQuery = gql`
             label
             url
           }
+          colorClassName
         }
         policies {
           links {
@@ -70,6 +71,7 @@ export const landingPageQuery = gql`
             label
             url
           }
+          colorClassName
         }
         copyright
       }
@@ -82,7 +84,6 @@ export const landingPageQuery = gql`
           alternativeText
         }
         ctaButton {
-          id
           label
           url
           bgColor
