@@ -27,7 +27,7 @@ export interface Cover {
 export interface CtaButton {
   label: string;
   url: string;
-  bgColor: 'turquoise' | 'black' | 'orange';
+  bgColor: 'bg_turquoise' | 'bg_black' | 'bg_orange';
 }
 
 export interface Header {
