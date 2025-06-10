@@ -27,6 +27,6 @@
 
 @layer utilities {
   .clip-hero-image {
-    clip-path: xywh(0 0px 100% 100% round 0px 0px 200px 200px);
+    clip-path: xywh(0 0px 100% 100% round 0 0 15% 15%);
   }
 }
