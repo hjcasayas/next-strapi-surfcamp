@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "info_blocks",
+  "info": {
+    "singularName": "info-block",
+    "pluralName": "info-blocks",
+    "displayName": "Info Block"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "ctaButton": {
+      "type": "component",
+      "component": "common.cta-button",
+      "repeatable": false
+    }
+  }
+}
