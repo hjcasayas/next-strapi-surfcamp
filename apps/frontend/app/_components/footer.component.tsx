@@ -1,48 +1,25 @@
-import NextLink from 'next/link';
-
-import { Footer, Link } from '../_gql/landing-page.interface';
+import { Footer } from '@/app/_gql/landing-page.interface';
 import { LogoComponent } from './logo.component';
+import { FooterNav } from './footer-nav.component';
+import { PolicyNav } from './policy-nav';
 
 type FooterComponentProps = Footer;
 
-export const FooterNav = ({ links }: { links: Link[] }) => {
-  return (
-    <ul className="flex items-center space-x-16 text-white">
-      {links.map((link) => (
-        <NextLink
-          key={link.slug}
-          href={link.url}
-          className="text-3xl font-bold"
-        >
-          {link.label}
-        </NextLink>
-      ))}
-    </ul>
-  );
-};
-
-export const PolicyNav = ({ links }: { links: Link[] }) => {
-  return (
-    <ul className="flex items-center space-x-11 text-white">
-      {links.map((link) => (
-        <NextLink
-          key={link.slug}
-          href={link.url}
-          className="text-xl font-normal"
-        >
-          {link.label}
-        </NextLink>
-      ))}
-    </ul>
-  );
-};
-
-export const FooterComponent = (props: FooterComponentProps) => {
-  const { logo, menu, policies, copyright } = props;
+export const FooterComponent = ({
+  logo,
+  menu,
+  policies,
+  copyright,
+}: FooterComponentProps) => {
   return (
     <footer className="flex flex-col space-y-8 bg-black px-11 pt-20 pb-11 text-white">
       <div className="flex items-center justify-between">
-        <LogoComponent {...logo} />
+        <div className="relative h-32 w-20">
+          <LogoComponent
+            {...logo}
+            className="brightness-[104%] contrast-[101%] hue-rotate-[270deg] invert-100 saturate-0 sepia-[32%]"
+          />
+        </div>
         <FooterNav links={menu.links} />
       </div>
       <div className="flex items-center justify-between">
