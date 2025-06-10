@@ -61,7 +61,7 @@ export interface InfoBlock {
   headline: string;
   content: string;
   image: Image;
-  ctaButton: CtaButton;
+  ctaButton?: CtaButton | null;
   reversed: boolean;
 }
 export interface Page {

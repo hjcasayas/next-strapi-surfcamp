@@ -39,7 +39,7 @@
       "type": "component",
       "component": "common.cta-button",
       "repeatable": false,
-      "required": true
+      "required": false
     },
     "reversed": {
       "type": "boolean",

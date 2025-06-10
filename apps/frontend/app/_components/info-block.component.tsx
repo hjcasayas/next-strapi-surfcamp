@@ -42,7 +42,9 @@ export const InfoBlockComponent = ({
       >
         <h2 className="text-[80px]">{headline}</h2>
         <Markdown>{content}</Markdown>
-        <CtaButtonComponent {...ctaButton} className="px-5 py-3 text-2xl" />
+        {ctaButton != null ? (
+          <CtaButtonComponent {...ctaButton} className="px-5 py-3 text-2xl" />
+        ) : null}
       </div>
     </div>
   );
