@@ -61,8 +61,7 @@ export interface InfoBlock {
   content: string;
   image: Image;
   ctaButton: CtaButton;
-  direction: 'flex_row' | 'flex_row_reverse';
-  imageClipDirection: 'info_block_image_clip' | 'info_block_image_clip_reverse';
+  reversed: boolean;
 }
 export interface LandingPageData {
   landingPage: {

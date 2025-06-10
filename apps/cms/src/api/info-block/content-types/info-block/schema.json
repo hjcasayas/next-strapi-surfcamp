@@ -41,17 +41,10 @@
       "repeatable": false,
       "required": true
     },
-    "direction": {
-      "type": "enumeration",
+    "reversed": {
+      "type": "boolean",
       "required": true,
-      "default": "flex-row",
-      "enum": ["flex-row", "flex-row-reverse"]
-    },
-    "imageClipDirection": {
-      "type": "enumeration",
-      "required": true,
-      "default": "info-block-image-clip",
-      "enum": ["info-block-image-clip", "info-block-image-clip-reverse"]
+      "default": false
     }
   }
 }

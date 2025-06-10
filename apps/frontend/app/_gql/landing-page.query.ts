@@ -89,8 +89,7 @@ export const landingPageQuery = gql`
           url
           bgColor
         }
-        direction
-        imageClipDirection
+        reversed
       }
     }
   }
