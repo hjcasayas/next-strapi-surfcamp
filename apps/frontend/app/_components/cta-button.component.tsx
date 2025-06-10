@@ -12,10 +12,21 @@ export const CtaButtonComponent = ({
   className,
   bgColor,
 }: CallToActionComponentProps) => {
+  const bgColorMap: Record<string, string> = {
+    bg_turquoise: 'bg-turquoise',
+    bg_black: 'bg-black',
+    bg_orange: 'bg-orange',
+    bg_brown: 'bg-brown',
+  };
+
   return (
     <Link
       href={url}
-      className={cn('text-white', bgColor.replaceAll('_', '-'), className)}
+      className={cn(
+        'rounded-full font-bold text-white',
+        bgColorMap[bgColor],
+        className
+      )}
     >
       {label}
     </Link>

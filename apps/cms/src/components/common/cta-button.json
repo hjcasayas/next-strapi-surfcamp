@@ -17,7 +17,7 @@
       "type": "enumeration",
       "required": true,
       "default": "bg-black",
-      "enum": ["bg-black", "bg-turquoise", "bg-orange", "bg-light-brown"]
+      "enum": ["bg-black", "bg-turquoise", "bg-orange", "bg-brown"]
     }
   },
   "config": {}
