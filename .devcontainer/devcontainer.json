@@ -7,11 +7,6 @@
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
   "mounts": [
     {
-      "source": "${localWorkspaceFolderBasename}-node_modules",
-      "target": "${containerWorkspaceFolder}/node_modules",
-      "type": "volume"
-    },
-    {
       "source": "${localEnv:HOME}/.ssh",
       "target": "/home/node/.ssh",
       "type": "bind"
@@ -32,5 +27,5 @@
       ]
     }
   },
-  "postCreateCommand": "sudo chown node node_modules && npm install"
+  "postCreateCommand": "sudo npm install"
 }
