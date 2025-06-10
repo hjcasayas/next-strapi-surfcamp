@@ -20,6 +20,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::footer.footer"
+    },
+    "infoBlocks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::info-block.info-block"
     }
   }
 }

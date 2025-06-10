@@ -4,7 +4,7 @@
   "info": {
     "singularName": "info-block",
     "pluralName": "info-blocks",
-    "displayName": "Info Block"
+    "displayName": "InfoBlock"
   },
   "options": {
     "draftAndPublish": true
@@ -21,20 +21,37 @@
       "targetField": "name",
       "required": true
     },
-    "description": {
+    "headline": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
       "type": "richtext",
       "required": true
     },
     "image": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": true,
       "allowedTypes": ["images"]
     },
     "ctaButton": {
       "type": "component",
       "component": "common.cta-button",
-      "repeatable": false
+      "repeatable": false,
+      "required": true
+    },
+    "direction": {
+      "type": "enumeration",
+      "required": true,
+      "default": "flex-row",
+      "enum": ["flex-row", "flex-row-reverse"]
+    },
+    "imageClipDirection": {
+      "type": "enumeration",
+      "required": true,
+      "default": "info-block-image-clip",
+      "enum": ["info-block-image-clip", "info-block-image-clip-reverse"]
     }
   }
 }
