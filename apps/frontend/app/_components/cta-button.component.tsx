@@ -12,7 +12,6 @@ export const CtaButtonComponent = ({
   className,
   bgColor,
 }: CallToActionComponentProps) => {
-  console.log({ bgColor });
   return (
     <Link
       href={url}
