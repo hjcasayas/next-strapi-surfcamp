@@ -71,6 +71,16 @@ export const blogPageQuery = gql`
         inputPlaceholder
         buttonLabel
       }
+      featuredArticles {
+        slug
+        title
+        body
+        image {
+          url
+          alternativeText
+        }
+        publishedDate
+      }
     }
   }
 `;
