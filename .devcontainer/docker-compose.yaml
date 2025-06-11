@@ -10,8 +10,6 @@ services:
     env_file:
       - path: ./.cms.env
         required: true
-    environment:
-      - npm_config_user=root
   frontend:
     build:
       context: ../
