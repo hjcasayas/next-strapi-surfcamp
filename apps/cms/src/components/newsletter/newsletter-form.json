@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_newsletter_newsletter_forms",
+  "info": {
+    "displayName": "NewsletterForm"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "inputPlaceholder": {
+      "type": "string",
+      "required": true
+    },
+    "buttonLabel": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

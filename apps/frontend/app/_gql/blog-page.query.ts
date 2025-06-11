@@ -50,13 +50,26 @@ export const blogPageQuery = gql`
         copyright
       }
       highlightedArticle {
-        slug
-        title
-        body
-        image {
-          url
-          alternativeText
+        article {
+          slug
+          title
+          body
+          image {
+            alternativeText
+            url
+          }
         }
+        ctaButton {
+          bgColor
+          label
+          url
+        }
+      }
+      newsletterForm {
+        title
+        description
+        inputPlaceholder
+        buttonLabel
       }
     }
   }

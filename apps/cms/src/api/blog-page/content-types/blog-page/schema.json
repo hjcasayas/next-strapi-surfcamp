@@ -22,9 +22,15 @@
       "target": "api::footer.footer"
     },
     "highlightedArticle": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::article.article"
+      "type": "component",
+      "component": "blog.highlighted-article",
+      "repeatable": false
+    },
+    "newsletterForm": {
+      "type": "component",
+      "component": "newsletter.newsletter-form",
+      "repeatable": false,
+      "required": true
     }
   }
 }

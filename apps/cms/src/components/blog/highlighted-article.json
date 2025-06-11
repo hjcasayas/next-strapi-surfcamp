@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_blog_highlighted_articles",
+  "info": {
+    "displayName": "HighlightedArticle"
+  },
+  "options": {},
+  "attributes": {
+    "article": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::article.article"
+    },
+    "ctaButton": {
+      "type": "component",
+      "component": "common.cta-button",
+      "repeatable": false,
+      "required": true
+    }
+  },
+  "config": {}
+}
