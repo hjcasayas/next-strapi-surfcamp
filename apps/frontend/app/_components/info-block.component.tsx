@@ -24,7 +24,7 @@ export const InfoBlockComponent = ({
       <div className="relative h-auto w-1/2">
         <NextImage
           src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${image.url}`}
-          alt={image.alternativeText}
+          alt={image.alternativeText ?? ''}
           className={cn(
             'object-cover object-center',
             reversed ? 'rounded-l-full' : 'rounded-r-full'

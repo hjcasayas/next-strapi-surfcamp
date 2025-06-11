@@ -11,7 +11,7 @@ export const LogoComponent = (props: Logo) => {
     <Image
       className="object-contain object-center"
       src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${url}`}
-      alt={alternativeText}
+      alt={alternativeText || ''}
       unoptimized
       fill
       priority

@@ -33,7 +33,7 @@ export const HighlightedArticleComponent = ({
           className="rounded-[40px] object-cover object-center"
           src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${url}`}
           loader={imageLoaderProp}
-          alt={alternativeText}
+          alt={alternativeText ?? ''}
           sizes="100%"
           priority
           fill
