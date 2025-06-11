@@ -31,6 +31,11 @@
       "component": "newsletter.newsletter-form",
       "repeatable": false,
       "required": true
+    },
+    "featuredArticles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article"
     }
   }
 }
