@@ -10,12 +10,6 @@
       "multiple": false,
       "required": true,
       "allowedTypes": ["images"]
-    },
-    "colorClassName": {
-      "type": "enumeration",
-      "required": true,
-      "default": "logo-black",
-      "enum": ["logo-black", "logo-white", "logo-orange"]
     }
   },
   "config": {}

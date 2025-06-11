@@ -9,7 +9,6 @@ export const experiencePageQuery = gql`
             url
             alternativeText
           }
-          colorClassName
         }
         menu {
           links {
@@ -46,7 +45,6 @@ export const experiencePageQuery = gql`
               url
               alternativeText
             }
-            colorClassName
           }
         }
       }
@@ -56,7 +54,6 @@ export const experiencePageQuery = gql`
             url
             alternativeText
           }
-          colorClassName
         }
         menu {
           links {

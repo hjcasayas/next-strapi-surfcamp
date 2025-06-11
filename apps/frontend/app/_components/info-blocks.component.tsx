@@ -9,7 +9,7 @@ export const InfoBlocksComponent = ({
   infoBlocks,
 }: InfoBlocksComponentProps) => {
   return (
-    <div className="mt-40 flex flex-col justify-center gap-y-14">
+    <div className="flex flex-col justify-center gap-y-14">
       {infoBlocks.map(({ slug, ...infoBlock }: InfoBlock) => {
         return <InfoBlockComponent key={slug} {...infoBlock} />;
       })}

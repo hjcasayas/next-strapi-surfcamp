@@ -7,7 +7,7 @@ export const PageComponent = ({ header, infoBlocks, footer }: Page) => {
   return (
     <>
       <HeaderComponent {...header} />
-      <main>
+      <main className="pt-40 pb-28">
         <InfoBlocksComponent infoBlocks={infoBlocks} />
       </main>
       <FooterComponent {...footer} />
