@@ -4,7 +4,9 @@ import { BlogPageData } from '@/app/_interfaces/blog-page-data.interface';
 import { usePageQuery } from '@/app/_hooks/use-landing-page-query.hook';
 import { blogPageQuery } from '@/app/_gql/blog-page.query';
 
+import { HighlightedArticleComponent } from '../highlighted-article.component';
 import { LayoutComponent } from '../layout.component';
+import { NewsletterFormComponent } from '../newsletter-form.component';
 
 export const BlogPageComponent = () => {
   const { data, isLoading, isError } = usePageQuery<{
@@ -26,11 +28,16 @@ export const BlogPageComponent = () => {
   }
 
   const blogPage = data.blogPage;
-  const { header, footer } = blogPage;
+  const { header, footer, highlightedArticle, newsletterForm } = blogPage;
 
   return (
-    <LayoutComponent header={header} footer={footer}>
-      blog-page works!
+    <LayoutComponent
+      header={header}
+      footer={footer}
+      className="flex flex-col space-y-[100px] px-12"
+    >
+      <HighlightedArticleComponent {...highlightedArticle} />
+      <NewsletterFormComponent {...newsletterForm} />
     </LayoutComponent>
   );
 };
