@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import { Logo } from '../_gql/page.interface';
+
+import { Logo } from '../_interfaces/logo.interface';
 
 export const LogoComponent = (props: Logo) => {
   const {

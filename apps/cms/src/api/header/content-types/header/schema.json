@@ -41,7 +41,7 @@
       "type": "component",
       "component": "header.hero",
       "repeatable": false,
-      "required": true
+      "required": false
     }
   }
 }

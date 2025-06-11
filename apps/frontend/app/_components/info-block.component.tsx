@@ -1,11 +1,11 @@
 import NextImage from 'next/image';
-
 import Markdown from 'react-markdown';
 
 import { imageLoaderProp } from '../_utils/image-loader-prop.util';
-import { CtaButtonComponent } from './cta-button.component';
-import { InfoBlock } from '../_gql/page.interface';
+import { InfoBlock } from '../_interfaces/info-block.interface';
 import { cn } from '../_utils/cn.util';
+
+import { CtaButtonComponent } from './cta-button.component';
 
 export const InfoBlockComponent = ({
   image,

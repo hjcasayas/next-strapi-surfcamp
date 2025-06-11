@@ -1,7 +1,8 @@
-import { Hero } from '../_gql/page.interface';
-import { CoverComponent } from './cover.component';
-import { HeadlinesComponent } from './headlines.component';
+import { Hero } from '../_interfaces/header.interface';
+
 import { CtaButtonComponent } from './cta-button.component';
+import { HeadlinesComponent } from './headlines.component';
+import { CoverComponent } from './cover.component';
 import { LogoComponent } from './logo.component';
 
 export const HeroComponent = ({

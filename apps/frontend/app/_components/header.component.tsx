@@ -1,9 +1,10 @@
-import { Header } from '../_gql/page.interface';
+import { Header } from '../_interfaces/header.interface';
+
 import { NavigationComponent } from './navigation.component';
-import { LogoComponent } from './logo.component';
-import { HeaderNav } from './header-nav.component';
 import { CtaButtonComponent } from './cta-button.component';
+import { LogoComponent } from './logo.component';
 import { HeroComponent } from './hero.component';
+import { HeaderNav } from './header-nav.component';
 
 export const HeaderComponent = ({ logo, menu, ctaButton, hero }: Header) => {
   return (
@@ -18,7 +19,7 @@ export const HeaderComponent = ({ logo, menu, ctaButton, hero }: Header) => {
           className="rounded-full px-5 py-3 text-2xl"
         />
       </NavigationComponent>
-      <HeroComponent {...hero} />
+      {hero != null ? <HeroComponent {...hero} /> : null}
     </header>
   );
 };

@@ -1,8 +1,7 @@
 import Image from 'next/image';
 
-import { Cover } from '@/app/_gql/page.interface';
-
 import { imageLoaderProp } from '@/app/_utils/image-loader-prop.util';
+import { Cover } from '../_interfaces/header.interface';
 
 type CoverComponentProps = Cover;
 

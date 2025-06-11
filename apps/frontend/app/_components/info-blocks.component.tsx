@@ -1,5 +1,5 @@
 import { InfoBlockComponent } from './info-block.component';
-import { InfoBlock } from '../_gql/page.interface';
+import { InfoBlock } from '../_interfaces/info-block.interface';
 
 interface InfoBlocksComponentProps {
   infoBlocks: InfoBlock[];
