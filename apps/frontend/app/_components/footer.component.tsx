@@ -1,4 +1,5 @@
-import { Footer } from '@/app/_gql/page.interface';
+import { Footer } from '../_interfaces/footer.interface';
+
 import { LogoComponent } from './logo.component';
 import { FooterNav } from './footer-nav.component';
 import { PolicyNav } from './policy-nav';
@@ -17,10 +18,10 @@ export const FooterComponent = ({
         <div className="relative h-32 w-20">
           <LogoComponent {...logo} />
         </div>
-        <FooterNav links={menu.links} />
+        <FooterNav {...menu} />
       </div>
       <div className="flex items-center justify-between">
-        <PolicyNav links={policies.links} />
+        <PolicyNav {...policies} />
         <span className="text-xl font-normal">{copyright}</span>
       </div>
     </footer>

@@ -1,4 +1,4 @@
-import { Headline } from '@/app/_gql/page.interface';
+import { Headline } from '../_interfaces/header.interface';
 import { cn } from '../_utils/cn.util';
 
 export interface HeadlineComponentProps {

@@ -1,7 +1,7 @@
 import NextLink from 'next/link';
 
-import { Navigation } from '@/app/_gql/page.interface';
 import { colorClassNameMap } from '../_utils/nav-color-class-name-map.util';
+import { Navigation } from '../_interfaces/navigation.interface';
 import { cn } from '../_utils/cn.util';
 
 export const HeaderNav = ({ links, colorClassName }: Navigation) => {
