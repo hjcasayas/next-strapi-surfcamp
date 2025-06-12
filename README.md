@@ -26,6 +26,10 @@ A website for marketing surf camp. It includes landing pages, articles, newslett
    - strapi: http://localhost:1337
    - nextjs: http://localhost:3030
 
+## Figma File
+
+[Surfcamp Figma file](https://www.figma.com/file/N27pbzZuIRUm68cjBKuFxv/Surf-Camp-%2F-Sharefile?type=design&node-id=0-1&mode=design)
+
 ## Todos
 
 - Newsletter Functionality
