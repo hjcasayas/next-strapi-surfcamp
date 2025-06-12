@@ -7,13 +7,13 @@ import {
 } from './featured-item';
 
 export const FeaturedArticleComponent = ({
-  slug,
+  documentId,
   title,
   image,
   publishedDate,
 }: Article) => {
   return (
-    <FeaturedItemContainerComponent href={`/blogs/${slug}`}>
+    <FeaturedItemContainerComponent href={`/blog/${documentId}`}>
       <FeaturedItemImageComponent {...image} />
       <div className="flex flex-1 flex-col justify-between gap-y-4 px-8 pt-5 pb-9">
         <FeaturedItemTitleComponent title={title} />

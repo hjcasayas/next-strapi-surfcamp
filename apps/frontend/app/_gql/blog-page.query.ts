@@ -73,6 +73,7 @@ export const blogPageQuery = gql`
       }
       featuredArticles {
         articles {
+          documentId
           slug
           title
           body
