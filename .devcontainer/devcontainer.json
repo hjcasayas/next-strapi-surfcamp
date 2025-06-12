@@ -27,6 +27,5 @@
         "eamodio.gitlens"
       ]
     }
-  },
-  "postCreateCommand": "sudo npm install"
+  }
 }
