@@ -7,6 +7,7 @@ import { blogPageQuery } from '@/app/_gql/blog-page.query';
 import { HighlightedArticleComponent } from '../highlighted-article.component';
 import { LayoutComponent } from '../layout.component';
 import { NewsletterFormComponent } from '../newsletter-form.component';
+import { FeaturedArticlesComponent } from '../featured-articles.component';
 
 export const BlogPageComponent = () => {
   const { data, isLoading, isError } = usePageQuery<{
@@ -28,7 +29,13 @@ export const BlogPageComponent = () => {
   }
 
   const blogPage = data.blogPage;
-  const { header, footer, highlightedArticle, newsletterForm } = blogPage;
+  const {
+    header,
+    footer,
+    highlightedArticle,
+    newsletterForm,
+    featuredArticles,
+  } = blogPage;
 
   return (
     <LayoutComponent
@@ -38,6 +45,7 @@ export const BlogPageComponent = () => {
     >
       <HighlightedArticleComponent {...highlightedArticle} />
       <NewsletterFormComponent {...newsletterForm} />
+      <FeaturedArticlesComponent {...featuredArticles} />
     </LayoutComponent>
   );
 };
