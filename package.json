@@ -8,8 +8,7 @@
     "lint:frontend": "npm run lint --workspace=apps/frontend",
     "prettier-watch": "onchange \"**/*.tsx\" \"**/*.ts\" \"**/*.css\" -- prettier --write --ignore-unknown {{changed}}",
     "git:commit": "cz",
-    "lint-staged": "lint-staged",
-    "prepare": "husky"
+    "lint-staged": "lint-staged"
   },
   "keywords": [],
   "author": "",
