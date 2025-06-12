@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_blog_featured_articles",
+  "info": {
+    "displayName": "featuredArticles"
+  },
+  "options": {},
+  "attributes": {
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article"
+    },
+    "button": {
+      "type": "component",
+      "component": "common.simple-button",
+      "repeatable": false,
+      "required": true
+    }
+  },
+  "config": {}
+}

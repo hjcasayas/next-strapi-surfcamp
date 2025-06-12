@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_common_simple_buttons",
+  "info": {
+    "displayName": "Simple Button"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "bgColorClassName": {
+      "type": "enumeration",
+      "required": true,
+      "default": "bg-turquoise",
+      "enum": ["bg-turquoise", "bg-black", "bg-orange", "bg-brown"]
+    },
+    "textColorClassName": {
+      "type": "enumeration",
+      "required": true,
+      "default": "text-white",
+      "enum": ["text-white", "text-black"]
+    }
+  },
+  "config": {}
+}

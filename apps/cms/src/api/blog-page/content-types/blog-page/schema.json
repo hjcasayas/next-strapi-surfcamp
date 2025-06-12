@@ -33,9 +33,10 @@
       "required": true
     },
     "featuredArticles": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::article.article"
+      "type": "component",
+      "component": "blog.featured-articles",
+      "repeatable": false,
+      "required": true
     }
   }
 }

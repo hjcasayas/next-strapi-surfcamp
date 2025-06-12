@@ -5,4 +5,5 @@ export interface Article {
   title: string;
   body: string;
   image: Image;
+  publishedDate: string;
 }

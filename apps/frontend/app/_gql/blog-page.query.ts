@@ -72,14 +72,21 @@ export const blogPageQuery = gql`
         buttonLabel
       }
       featuredArticles {
-        slug
-        title
-        body
-        image {
-          url
-          alternativeText
+        articles {
+          slug
+          title
+          body
+          image {
+            url
+            alternativeText
+          }
+          publishedDate
         }
-        publishedDate
+        button {
+          label
+          textColorClassName
+          bgColorClassName
+        }
       }
     }
   }
