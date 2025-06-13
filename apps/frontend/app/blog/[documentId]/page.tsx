@@ -9,7 +9,7 @@ import { Article } from '@/app/_interfaces/article.interface';
 const BlogByDocumentIdPage = async ({
   params,
 }: {
-  params: { documentId: string };
+  params: Promise<{ documentId: string }>;
 }) => {
   const { documentId } = await params;
   const data = await graphqlRequest<Article, { documentId: string }>(
