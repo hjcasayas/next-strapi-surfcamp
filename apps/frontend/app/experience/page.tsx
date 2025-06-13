@@ -1,3 +1,4 @@
+import { dehydrate, HydrationBoundary } from '@tanstack/react-query';
 import { ExperiencePageComponent } from '../_components/pages/experience-page.component';
 import { experiencePageQuery } from '../_gql/experience-page.query';
 import { graphqlRequest } from '../_gql/graphql-request';
@@ -11,5 +12,9 @@ export default async function ExperiencePage() {
     queryFn: () => graphqlRequest(experiencePageQuery),
   });
 
-  return <ExperiencePageComponent />;
+  return (
+    <HydrationBoundary state={dehydrate(queryClient)}>
+      <ExperiencePageComponent />
+    </HydrationBoundary>
+  );
 }

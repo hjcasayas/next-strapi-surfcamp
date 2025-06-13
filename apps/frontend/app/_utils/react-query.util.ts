@@ -4,7 +4,7 @@ const makeQueryClient = () => {
   return new QueryClient({
     defaultOptions: {
       queries: {
-        staleTime: 1000 * 60 * 5,
+        staleTime: 1000 * 60,
       },
     },
   });
@@ -17,7 +17,7 @@ export const getQueryClient = () => {
     return makeQueryClient();
   }
 
-  if (browserQueryClient === null) {
+  if (browserQueryClient == null) {
     browserQueryClient = makeQueryClient();
   }
 

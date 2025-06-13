@@ -2,6 +2,7 @@ import { BlogPageComponent } from '../_components/pages/blog-page.component';
 import { getQueryClient } from '../_utils/react-query.util';
 import { graphqlRequest } from '../_gql/graphql-request';
 import { blogPageQuery } from '../_gql/blog-page.query';
+import { dehydrate, HydrationBoundary } from '@tanstack/react-query';
 
 export default async function BlogPage() {
   const queryClient = getQueryClient();
@@ -11,5 +12,9 @@ export default async function BlogPage() {
     queryFn: () => graphqlRequest(blogPageQuery),
   });
 
-  return <BlogPageComponent />;
+  return (
+    <HydrationBoundary state={dehydrate(queryClient)}>
+      <BlogPageComponent />
+    </HydrationBoundary>
+  );
 }
