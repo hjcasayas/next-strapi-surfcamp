@@ -14,7 +14,6 @@ export const NewsletterFormComponent = ({
 
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Email submitted:', email);
     setEmail('');
   };
 
