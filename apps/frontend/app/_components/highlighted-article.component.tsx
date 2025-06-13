@@ -13,7 +13,7 @@ export const HighlightedArticleComponent = ({
     title,
     body,
     image: { url, alternativeText },
-    slug,
+    documentId,
   } = article;
 
   return (
@@ -24,7 +24,7 @@ export const HighlightedArticleComponent = ({
           <MarkDown>{body}</MarkDown>
         </div>
         <CtaButtonComponent
-          {...{ ...ctaButton, url: `${ctaButton.url}/${slug}` }}
+          {...{ ...ctaButton, url: `${ctaButton.url}/${documentId}` }}
           className="px-10 py-4 text-3xl"
         />
       </div>

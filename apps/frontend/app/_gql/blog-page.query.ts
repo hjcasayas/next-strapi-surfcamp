@@ -51,6 +51,7 @@ export const blogPageQuery = gql`
       }
       highlightedArticle {
         article {
+          documentId
           slug
           title
           body
