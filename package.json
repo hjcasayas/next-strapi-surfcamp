@@ -4,8 +4,12 @@
   "main": "index.js",
   "scripts": {
     "dev:frontend": "npm run dev --workspace=apps/frontend",
+    "dev:web": "npm run dev --workspace=apps/web",
     "dev:cms": "npm run dev --workspace=apps/cms",
+    "build:frontend": "npm run build --workspace=apps/frontend",
+    "build:web": "npm run build --workspace=apps/web",
     "lint:frontend": "npm run lint --workspace=apps/frontend",
+    "lint:web": "npm run lint --workspace=apps/web",
     "prettier-watch": "onchange \"**/*.tsx\" \"**/*.ts\" \"**/*.css\" -- prettier --write --ignore-unknown {{changed}}",
     "git:commit": "cz",
     "lint-staged": "lint-staged"
@@ -46,6 +50,7 @@
   },
   "workspaces": [
     "apps/frontend",
-    "apps/cms"
+    "apps/cms",
+    "apps/web"
   ]
 }

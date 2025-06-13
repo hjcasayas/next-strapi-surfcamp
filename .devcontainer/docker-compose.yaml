@@ -25,6 +25,18 @@ services:
     env_file:
       - path: ./.frontend.env
         required: true
+  web:
+    build:
+      context: ../
+      dockerfile: ./apps/web/Dockerfile
+    depends_on:
+      - cms
+    restart: always
+    volumes:
+      - ../:/app
+      - web-node_modules:/app/node_modules
+    ports:
+      - '3040:3000'
   cms:
     build:
       context: ../
@@ -52,4 +64,5 @@ volumes:
   dev-container-node_modules:
   cms-node_modules:
   frontend-node_modules:
+  web-node_modules:
   postgres-data:
