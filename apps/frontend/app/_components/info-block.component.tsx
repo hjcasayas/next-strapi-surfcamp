@@ -1,3 +1,4 @@
+import React from 'react';
 import NextImage from 'next/image';
 import Markdown from 'react-markdown';
 
@@ -36,7 +37,7 @@ export const InfoBlockComponent = ({
       </div>
       <div
         className={cn(
-          'flex w-1/2 flex-col items-start justify-between gap-y-8 py-15',
+          'py-15 flex w-1/2 flex-col items-start justify-between gap-y-8',
           reversed ? 'pl-12' : 'pr-12'
         )}
       >

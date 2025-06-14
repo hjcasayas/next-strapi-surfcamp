@@ -1,5 +1,3 @@
-import { PropsWithChildren } from 'react';
-
 import { HeaderComponent } from './header.component';
 import { FooterComponent } from './footer.component';
 
@@ -8,9 +6,10 @@ import { Header } from '../_interfaces/header.interface';
 import { cn } from '../_utils/cn.util';
 
 interface LayoutComponentProps {
+  children: React.ReactNode;
+  className?: string;
   header: Header;
   footer: Footer;
-  className?: string;
 }
 
 export const LayoutComponent = ({
@@ -18,11 +17,11 @@ export const LayoutComponent = ({
   children,
   footer,
   className = '',
-}: PropsWithChildren<LayoutComponentProps>) => {
+}: LayoutComponentProps) => {
   return (
     <>
       <HeaderComponent {...header} />
-      <main className={cn('pt-40 pb-28', className)}>{children}</main>
+      <main className={cn('pb-28 pt-40', className)}>{children}</main>
       <FooterComponent {...footer} />
     </>
   );

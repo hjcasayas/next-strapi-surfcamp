@@ -1,5 +1,6 @@
+import React from 'react';
 import Image from 'next/image';
-import MarkDown from 'react-markdown';
+import Markdown from 'react-markdown';
 
 import { imageLoaderProp } from '../_utils/image-loader-prop.util';
 import { HighlightedArticle } from '../_interfaces/highlighted-article.interface';
@@ -21,7 +22,7 @@ export const HighlightedArticleComponent = ({
       <div className="flex w-1/2 flex-col items-start space-y-8 pt-4">
         <h1 className="text-6xl">{title}</h1>
         <div className="flex flex-col space-y-5 text-xl">
-          <MarkDown>{body}</MarkDown>
+          <Markdown>{body}</Markdown>
         </div>
         <CtaButtonComponent
           {...{ ...ctaButton, url: `${ctaButton.url}/${documentId}` }}
