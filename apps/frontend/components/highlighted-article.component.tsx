@@ -33,7 +33,7 @@ export const HighlightedArticleComponent = ({
       <div className="relative w-1/2">
         <Image
           className="rounded-[40px] object-cover object-center"
-          src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${url}`}
+          src={`${process.env.NODE_ENV != 'production' ? `${process.env.NEXT_PUBLIC_STRAPI_URL}${url}` : `${url}`}`}
           loader={imageLoaderProp}
           alt={alternativeText ?? ''}
           sizes="100%"

@@ -11,7 +11,7 @@ import { InfoBlock } from '@/interfaces/info-block.interface';
 import { CtaButtonComponent } from './cta-button.component';
 
 export const InfoBlockComponent = ({
-  image,
+  image: { url, alternativeText },
   headline,
   content,
   ctaButton,
@@ -26,8 +26,8 @@ export const InfoBlockComponent = ({
     >
       <div className="relative h-auto w-1/2">
         <NextImage
-          src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${image.url}`}
-          alt={image.alternativeText ?? ''}
+          src={`${process.env.NODE_ENV != 'production' ? `${process.env.NEXT_PUBLIC_STRAPI_URL}${url}` : `${url}`}`}
+          alt={alternativeText ?? ''}
           className={cn(
             'object-cover object-center',
             reversed ? 'rounded-l-full' : 'rounded-r-full'

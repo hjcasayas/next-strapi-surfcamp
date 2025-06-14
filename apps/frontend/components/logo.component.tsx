@@ -10,7 +10,7 @@ export const LogoComponent = (props: Logo) => {
   return (
     <Image
       className="object-contain object-center"
-      src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${url}`}
+      src={`${process.env.NODE_ENV != 'production' ? `${process.env.NEXT_PUBLIC_STRAPI_URL}${url}` : `${url}`}`}
       alt={alternativeText || ''}
       unoptimized
       fill

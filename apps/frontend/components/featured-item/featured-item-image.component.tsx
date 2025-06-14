@@ -7,7 +7,7 @@ export const FeaturedItemImageComponent = ({ url, alternativeText }: Image) => {
     <div className="relative h-[420px] w-full">
       <NextImage
         className="object-cover object-center"
-        src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${url}`}
+        src={`${process.env.NODE_ENV != 'production' ? `${process.env.NEXT_PUBLIC_STRAPI_URL}${url}` : `${url}`}`}
         alt={alternativeText || ''}
         unoptimized
         fill
