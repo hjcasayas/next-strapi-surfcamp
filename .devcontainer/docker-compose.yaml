@@ -5,38 +5,37 @@ services:
       context: .
     volumes:
       - ../:/workspaces/learn-sams-surfcamp:cached
-      - dev-container-node_modules:/workspaces/learn-sams-surfcamp/node_modules
     command: sleep infinity
     env_file:
       - path: ./.cms.env
         required: true
-  frontend:
-    build:
-      context: ../
-      dockerfile: ./apps/frontend/Dockerfile
-    depends_on:
-      - cms
-    restart: always
-    volumes:
-      - ../:/app
-      - frontend-node_modules:/app/node_modules
-    ports:
-      - '3030:3000'
-    env_file:
-      - path: ./.frontend.env
-        required: true
-  web:
-    build:
-      context: ../
-      dockerfile: ./apps/web/Dockerfile
-    depends_on:
-      - cms
-    restart: always
-    volumes:
-      - ../:/app
-      - web-node_modules:/app/node_modules
-    ports:
-      - '3040:3000'
+  # frontend:
+  #   build:
+  #     context: ../
+  #     dockerfile: ./apps/frontend/Dockerfile
+  #   depends_on:
+  #     - cms
+  #   restart: always
+  #   volumes:
+  #     - ../:/app
+  #     - frontend-node_modules:/app/node_modules
+  #   ports:
+  #     - '3030:3000'
+  #   env_file:
+  #     - path: ./.frontend.env
+  #       required: true
+  # web:
+  #   build:
+  #     context: ../
+  #     dockerfile: ./apps/web/Dockerfile
+  #   depends_on:
+  #     - cms
+  #   restart: always
+  #   volumes:
+  #     - ../:/app
+  #     - web-node_modules:/app/node_modules
+  #   ports:
+  #     - '3040:3000'
   cms:
     build:
       context: ../

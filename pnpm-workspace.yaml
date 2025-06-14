@@ -1,0 +1,11 @@
+packages:
+  - apps/*
+
+onlyBuiltDependencies:
+  - '@apollo/protobufjs'
+  - '@swc/core'
+  - '@tailwindcss/oxide'
+  - core-js-pure
+  - esbuild
+  - sharp
+  - unrs-resolver
