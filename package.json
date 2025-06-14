@@ -4,12 +4,9 @@
   "main": "index.js",
   "scripts": {
     "dev:frontend": "pnpm  --filter @learn-surfcamp/frontend run dev",
-    "dev:web": "pnpm  --filter @learn-surfcamp/web run dev",
     "dev:cms": "pnpm  --filter @learn-surfcamp/cms run dev",
     "build:frontend": "pnpm  --filter @learn-surfcamp/frontend run build",
-    "build:web": "pnpm  --filter @learn-surfcamp/web run build",
     "lint:frontend": "pnpm  --filter @learn-surfcamp/frontend run lint",
-    "lint:web": "pnpm  --filter @learn-surfcamp/web run lint",
     "prettier-watch": "onchange \"**/*.tsx\" \"**/*.ts\" \"**/*.css\" -- prettier --write --ignore-unknown {{changed}}",
     "git:commit": "cz",
     "lint-staged": "lint-staged"

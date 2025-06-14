@@ -1,14 +1,13 @@
-import { Header } from '../_interfaces/header.interface';
-
+import { Header } from '@/interfaces/header.interface';
 import { NavigationComponent } from './navigation.component';
-import { CtaButtonComponent } from './cta-button.component';
 import { LogoComponent } from './logo.component';
-import { HeroComponent } from './hero.component';
 import { HeaderNav } from './header-nav.component';
+import { CtaButtonComponent } from './cta-button.component';
+import { HeroComponent } from './hero.component';
 
 export const HeaderComponent = ({ logo, menu, ctaButton, hero }: Header) => {
   return (
-    <header className="relative top-0 right-0 left-0">
+    <header className="relative left-0 right-0 top-0">
       <NavigationComponent>
         <div className="relative h-20 w-12">
           <LogoComponent {...logo} />

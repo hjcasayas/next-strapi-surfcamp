@@ -16,7 +16,7 @@ export const FeaturedArticleComponent = ({
   return (
     <FeaturedItemContainerComponent href={`/blog/${documentId}`}>
       <FeaturedItemImageComponent {...image} />
-      <div className="flex flex-1 flex-col justify-between gap-y-4 px-8 pt-5 pb-9">
+      <div className="flex flex-1 flex-col justify-between gap-y-4 px-8 pb-9 pt-5">
         <FeaturedItemTitleComponent title={title} />
         <FeaturedItemDateComponent date={publishedDate} />
       </div>

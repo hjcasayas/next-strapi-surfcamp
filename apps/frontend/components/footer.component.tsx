@@ -1,5 +1,4 @@
-import { Footer } from '../_interfaces/footer.interface';
-
+import { Footer } from '@/interfaces/footer.interface';
 import { LogoComponent } from './logo.component';
 import { FooterNav } from './footer-nav.component';
 import { PolicyNav } from './policy-nav';
@@ -13,7 +12,7 @@ export const FooterComponent = ({
   copyright,
 }: FooterComponentProps) => {
   return (
-    <footer className="flex flex-col space-y-8 bg-black px-11 pt-20 pb-11 text-white">
+    <footer className="flex flex-col space-y-8 bg-black px-11 pb-11 pt-20 text-white">
       <div className="flex items-center justify-between">
         <div className="relative h-32 w-20">
           <LogoComponent {...logo} />

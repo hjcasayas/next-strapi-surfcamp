@@ -1,9 +1,8 @@
-import { Hero } from '../_interfaces/header.interface';
-
+import { Hero } from '@/interfaces/header.interface';
 import { CtaButtonComponent } from './cta-button.component';
-import { HeadlinesComponent } from './headlines.component';
-import { CoverComponent } from './cover.component';
 import { LogoComponent } from './logo.component';
+import { CoverComponent } from './cover.component';
+import { HeadlinesComponent } from './headlines.component';
 
 export const HeroComponent = ({
   cover,
@@ -12,7 +11,7 @@ export const HeroComponent = ({
   ...headlines
 }: Hero) => {
   return (
-    <div className="relative flex h-full flex-1 flex-col items-start justify-center px-12 pt-56 pb-32">
+    <div className="relative flex h-full flex-1 flex-col items-start justify-center px-12 pb-32 pt-56">
       <CoverComponent {...cover} />
       <HeadlinesComponent {...headlines} />
       <CtaButtonComponent {...ctaButton} className="z-10 px-8 py-4 text-3xl" />

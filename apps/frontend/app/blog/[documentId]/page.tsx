@@ -1,12 +1,12 @@
-import { BlogByDocumentIdPageComponent } from '@/app/_components/pages/blog-by-document-id-page.component';
-import { articlesQuery } from '@/app/_gql/articles.query';
+import { BlogByDocumentIdPageComponent } from '@/components/blog-by-document-id-page.component';
+import { articlesQuery } from '@/gql/articles.query';
 import {
   blogByDocumentIdPageQuery,
   blogByDocumentIdPageQueryVariables,
-} from '@/app/_gql/blog-by-document-id-page.query copy';
-import { graphqlRequest } from '@/app/_gql/graphql-request';
-import { Article } from '@/app/_interfaces/article.interface';
-import { getQueryClient } from '@/app/_utils/react-query.util';
+} from '@/gql/blog-by-document-id-page.query';
+import { graphqlRequest } from '@/gql/graphql-request';
+import { Article } from '@/interfaces/article.interface';
+import { getQueryClient } from '@/utils/react-query.util';
 import { dehydrate, HydrationBoundary } from '@tanstack/react-query';
 
 const BlogByDocumentIdPage = async ({

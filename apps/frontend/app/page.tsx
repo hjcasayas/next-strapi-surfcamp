@@ -1,8 +1,8 @@
+import { LandingPageComponent } from '@/components/pages/landing-page.component';
+import { graphqlRequest } from '@/gql/graphql-request';
+import { landingPageQuery } from '@/gql/landing-page.query';
+import { getQueryClient } from '@/utils/react-query.util';
 import { dehydrate, HydrationBoundary } from '@tanstack/react-query';
-import { graphqlRequest } from './_gql/graphql-request';
-import { landingPageQuery } from './_gql/landing-page.query';
-import { getQueryClient } from './_utils/react-query.util';
-import { LandingPageComponent } from './_components/pages/landing-page.component';
 
 export default async function LandingPage() {
   const queryClient = getQueryClient();
